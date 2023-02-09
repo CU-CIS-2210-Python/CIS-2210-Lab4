@@ -6,11 +6,8 @@ speed(9)
 # using the len parameter as
 # the outside size of the spriral 
 def spiral(len):
-    if len > 0:
-        forward(len)
-        right(90)
-        spiral(len - 10)
+    forward(len)
+    right(90)
+    spiral(len * .9)
 
-spiral(200)
-
-exitonclick()
+spiral(300)
